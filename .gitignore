@@ -8,4 +8,5 @@ assets/javascript/vendor/
 assets/javascript/foundation.js
 assets/javascript/custom/demosite.js
 packaged/
-/nbproject/private/
+/nbproject/
+/data/
