@@ -2,3 +2,12 @@
 *.log
 /nbproject/
 /data/
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.kshrc
+/htdocs/wp-config-sample.php
+/htdocs/wp-content/index.php
+/htdocs/wp-content/uploads/2013/
+/sql/
