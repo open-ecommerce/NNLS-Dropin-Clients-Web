@@ -1,0 +1,13 @@
+# Ignore wp-config.php and .htaccess
+wp-config.php
+.htaccess
+
+/vendor
+
+# Ignore the wp-content directory
+wp-content/plugins/*
+wp-content/themes/*
+!wp-content/themes/oewp
+wp-content/themes/oewp/node_modules
+
+
