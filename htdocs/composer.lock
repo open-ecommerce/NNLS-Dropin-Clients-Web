@@ -4,37 +4,33 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ec00aa1149846e224938a55c0573a1de",
-    "content-hash": "7f229c74731e490befa5f0d853743d43",
+    "hash": "7fb22b866f9cdfcdba85fe5d2b63a050",
+    "content-hash": "003f8047df6660b44f4bf51686e50cc2",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.23",
+            "version": "v1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
+                "reference": "d792632d27e1980d921cbbba12eab7b888338d4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d792632d27e1980d921cbbba12eab7b888338d4c",
+                "reference": "d792632d27e1980d921cbbba12eab7b888338d4c",
                 "shasum": ""
             },
-            "require": {
-                "composer-plugin-api": "^1.0"
-            },
             "replace": {
-                "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "4.1.*"
+                "phpunit/phpunit": "3.7.*"
             },
-            "type": "composer-plugin",
+            "type": "composer-installer",
             "extra": {
-                "class": "Composer\\Installers\\Plugin",
+                "class": "Composer\\Installers\\Installer",
                 "branch-alias": {
                     "dev-master": "1.0-dev"
                 }
@@ -52,58 +48,38 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama"
+                    "homepage": "https://github.com/shama",
+                    "role": "Developer"
                 }
             ],
             "description": "A multi-framework Composer library installer",
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
-                "Craft",
-                "Dolibarr",
-                "Hurad",
-                "MODX Evo",
-                "OXID",
-                "SMF",
-                "Thelia",
-                "WolfCMS",
+                "TYPO3 CMS",
+                "TYPO3 Flow",
+                "TYPO3 Neos",
                 "agl",
-                "aimeos",
-                "annotatecms",
-                "bitrix",
                 "cakephp",
-                "chef",
                 "codeigniter",
                 "concrete5",
-                "croogo",
-                "dokuwiki",
                 "drupal",
-                "elgg",
                 "fuelphp",
-                "grav",
                 "installer",
                 "joomla",
                 "kohana",
                 "laravel",
+                "li3",
                 "lithium",
-                "magento",
                 "mako",
-                "mediawiki",
                 "modulework",
-                "moodle",
                 "phpbb",
-                "piwik",
                 "ppi",
-                "puppet",
-                "roundcube",
-                "shopware",
                 "silverstripe",
                 "symfony",
-                "typo3",
                 "wordpress",
-                "zend",
-                "zikula"
+                "zend"
             ],
-            "time": "2016-01-27 12:54:22"
+            "time": "2013-10-24 16:13:49"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -154,11 +130,63 @@
             "time": "2015-06-11 15:15:30"
         },
         {
+            "name": "open-ecommerce/oe-ng-filter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:oedevelopers/oe-ng-filter.git",
+                "reference": "dbe013be4ba32b6eff03c761df7fd0dfa3ed8001"
+            },
+            "require": {
+                "composer/installers": "v1.0.7"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL3"
+            ],
+            "authors": [
+                {
+                    "name": "open-ecommerce.org",
+                    "email": "info@open-ecommerce.org",
+                    "homepage": "http://www.open-ecommerce.org"
+                }
+            ],
+            "description": "Angular plugin based in atsf",
+            "homepage": "http://www.open-ecommerce.org",
+            "keywords": [
+                "angular",
+                "filter",
+                "plugin",
+                "wordpress"
+            ],
+            "time": "2016-04-29 17:11:49"
+        },
+        {
+            "name": "wpackagist-plugin/advanced-custom-fields",
+            "version": "4.4.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/advanced-custom-fields/",
+                "reference": "tags/4.4.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
+        },
+        {
             "name": "wpackagist-plugin/really-simple-csv-importer",
             "version": "1.3",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/really-simple-csv-importer/",
+                "url": "https://plugins.svn.wordpress.org/really-simple-csv-importer/",
                 "reference": "trunk"
             },
             "dist": {
@@ -178,7 +206,7 @@
             "version": "0.6.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wordpress-importer/",
+                "url": "https://plugins.svn.wordpress.org/wordpress-importer/",
                 "reference": "tags/0.6.1"
             },
             "dist": {
@@ -198,7 +226,7 @@
             "version": "1.4.7",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wp-super-cache/",
+                "url": "https://plugins.svn.wordpress.org/wp-super-cache/",
                 "reference": "tags/1.4.7"
             },
             "dist": {
@@ -218,7 +246,7 @@
             "version": "1.3.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wp-super-cache-clear-cache-menu/",
+                "url": "https://plugins.svn.wordpress.org/wp-super-cache-clear-cache-menu/",
                 "reference": "tags/1.3.1"
             },
             "dist": {
@@ -232,16 +260,40 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-super-cache-clear-cache-menu/"
+        },
+        {
+            "name": "wpackagist-plugin/wpcat2tag-importer",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wpcat2tag-importer/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wpcat2tag-importer.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wpcat2tag-importer/",
+            "time": "2014-10-16 07:55:16"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "open-ecommerce/oe-ng-filter": 20,
+        "wpackagist-plugin/wpcat2tag-importer": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.4"
+        "php": ">=5.3"
     },
     "platform-dev": []
 }
