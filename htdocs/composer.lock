@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7fb22b866f9cdfcdba85fe5d2b63a050",
-    "content-hash": "003f8047df6660b44f4bf51686e50cc2",
+    "hash": "0c810f8806f126bd15c34e03ad3fb7c1",
+    "content-hash": "b3e7ed37f5232674028029446db6046a",
     "packages": [
         {
             "name": "composer/installers",
@@ -180,6 +180,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
+        },
+        {
+            "name": "wpackagist-plugin/pronamic-google-maps",
+            "version": "2.3.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/pronamic-google-maps/",
+                "reference": "tags/2.3.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/pronamic-google-maps.2.3.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/pronamic-google-maps/"
         },
         {
             "name": "wpackagist-plugin/really-simple-csv-importer",

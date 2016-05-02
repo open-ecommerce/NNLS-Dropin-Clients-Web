@@ -149,7 +149,7 @@ if (!class_exists('NG_Filter')) {
                 $post_type = $meta_data->search_post_type;
                 $categories = $meta_data->posts_categories;
                 $content_limit = $meta_data->contentLimit;
-                $meta_data->list = $this->process_search_sidebar($meta_data->list, $post_type);
+                $meta_data->list = $this->process_search_sidebar($meta_data->list, $post_type, $categories);
             }
 
             $get_all_post = $this->get_all_post($meta_data, $post_type, $categories, $content_limit);
@@ -297,7 +297,7 @@ if (!class_exists('NG_Filter')) {
          *
          * @since	1.0.0
          */
-        public function process_search_sidebar($metadata, $post_type)
+        public function process_search_sidebar($metadata, $post_type, $categories)
         {
             global $wpdb;
             if (!empty($metadata)) {
@@ -338,7 +338,7 @@ if (!class_exists('NG_Filter')) {
 
                     // recursive calling
                     if (isset($item->items)) {
-                        $this->process_search_sidebar($item->items, $post_type);
+                        $this->process_search_sidebar($item->items, $post_type, $categories);
                     }
                     } else {
 

@@ -8,5 +8,5 @@ wp-config.php
 wp-content/plugins/*
 !wp-content/plugins/oe-ng-filter
 wp-content/themes/*
-!wp-content/themes/oewp
-wp-content/themes/oewp/node_modules
+!wp-content/themes/oe-brixton
+wp-content/themes/oe-brixton/node_modules
