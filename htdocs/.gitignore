@@ -6,8 +6,7 @@ wp-config.php
 
 # Ignore the wp-content directory
 wp-content/plugins/*
+!wp-content/plugins/oe-ng-filter
 wp-content/themes/*
 !wp-content/themes/oewp
 wp-content/themes/oewp/node_modules
-
-
