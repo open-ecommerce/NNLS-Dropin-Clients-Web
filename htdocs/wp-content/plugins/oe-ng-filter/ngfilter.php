@@ -267,6 +267,19 @@ if (!class_exists('NG_Filter')) {
                 $data['post_date'] = $post->post_date;
                 $data['comment_count'] = intval($post->comment_count);
                 $data['post_thumbnail'] = $this->get_thumbnail(catch_that_image_by_post($post,'small'), $post_link);
+                $data['post_address'] = get_post_meta($post->ID, 'listing_address', true);
+                $data['post_area'] = get_post_meta($post->ID, 'listing_area', true);
+                $data['post_geo_lat'] = get_post_meta($post->ID, 'listing_geo_lat', true);
+                $data['post_geo_lon'] = get_post_meta($post->ID, 'listing_geo_lon', true);
+                $data['post_contact_name'] = esc_html(get_post_meta($post->ID, 'listing_contact_name', true));
+                $data['post_phone'] = esc_html(get_post_meta($post->ID, 'listing_phone', true));
+                $data['post_email'] = esc_html(get_post_meta($post->ID, 'listing_email', true));
+                $data['post_website'] = esc_html(get_post_meta($post->ID, 'listing_website', true));
+                $data['post_contactby'] = esc_html(get_post_meta($post->ID, 'listing_contactby', true));
+                $data['post_opening_times'] = esc_html(get_post_meta($post->ID, 'listing_opening_times', true));
+                $data['post_eligible'] = esc_html(get_post_meta($post->ID, 'listing_eligible', true));
+                $data['post_transport'] = esc_html(get_post_meta($post->ID, 'listing_transport', true));
+                $data['post_destination'] = intval(get_post_meta($post->ID, 'listing_destination', true));
 
                 //@ added in version 1.2.0
                 // for sorting facility
@@ -593,7 +606,6 @@ if (!class_exists('NG_Filter')) {
             }
             return $img;
         }
-
 
     } // end of class
 }
